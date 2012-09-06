@@ -3,17 +3,21 @@ abstract: 'Enhancing Test::More for UTF8-based projects'
 author:
   - 'Mons Anderson <mons@cpan.org>'
 build_requires:
-  Test::More: 0
-  ex::lib: 0
-distribution_type: module
-generated_by: 'Module::Install version 0.71'
-license: perl
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120630'
+license: unknown
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Test-More-UTF8
 no_index:
   directory:
-    - inc
     - t
-version: 0.02
+    - inc
+requires:
+  ExtUtils::MakeMaker: 6.6302
+  Test::More: 0
+version: 0.03

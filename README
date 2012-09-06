@@ -1,69 +1,39 @@
-Test-More-UTF8
-
 NAME
-	Test::More::UTF8 - Enhancing Test::More for UTF8-based projects
-
-VERSION
-	Version 0.02
+    Test::More::UTF8 - Enhancing Test::More for UTF8-based projects
 
 SYNOPSIS
-	use Test::More;
-	use Test::More::UTF8;
+        use Test::More;
+        use Test::More::UTF8;
 
-	# now we can easily use flagged strings without warnings like "Wide character in print ..."
-	is("\x{410}","\x{420}"); # got a failure message without warnings
+        # now we can easily use flagged strings without warnings like "Wide character in print ..."
+        is("\x{410}","\x{420}"); # got a failure message without warnings
 
 LIMITATIONS
-
-	This module have reason only for perl 5.8 and higher
+        This module have reason only for perl 5.8 and higher
 
 FEATURES
-	This module also switch on by default utf8 pragma. To disable this, add
-	"-utf8" option
+    This module also switch on by default utf8 pragma. To disable this, add
+    "-utf8" option
 
-		use Test::More::UTF8 qw(-utf8);
+        use Test::More::UTF8 qw(-utf8);
 
-	By default binmode ':utf8' will be done on all output handles:
-	failure_output, todo_output, output. It is possible to choose only some
-	of them
+    By default binmode ':utf8' will be done on all output handles:
+    failure_output, todo_output, output. It is possible to choose only some
+    of them
 
-		use Test::More::UTF8 qw(failure); # enable :utf8 only on failure_output
-		use Test::More::UTF8 qw(todo); # enable :utf8 only on todo_output
-		use Test::More::UTF8 qw(out); # enable :utf8 only on output
+        use Test::More::UTF8 qw(failure); # enable :utf8 only on failure_output
+        use Test::More::UTF8 qw(todo); # enable :utf8 only on todo_output
+        use Test::More::UTF8 qw(out); # enable :utf8 only on output
 
 AUTHOR
-	Mons Anderson, <mons@cpan.org>
+    Mons Anderson, <mons@cpan.org>
 
 BUGS
-	None known
+    None known
 
 COPYRIGHT & LICENSE
-	Copyright 2009 Mons Anderson, all rights reserved.
+    Copyright 2009 Mons Anderson, all rights reserved.
 
-	This program is free software; you can redistribute it and/or modify it
-	under the same terms as Perl itself.
-
-
-INSTALLATION
-
-To install this module, run the following commands:
-
-	perl Makefile.PL
-	make
-	make test
-	make install
-
-SUPPORT AND DOCUMENTATION
-
-After installing, you can find documentation for this module with the
-perldoc command.
-
-	perldoc Test::More::UTF8
-
-COPYRIGHT AND LICENCE
-
-Copyright (c) 2009 Mons Anderson
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 

@@ -1,4 +1,4 @@
-.cvsignore
+.gitignore
 Changes
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
@@ -13,7 +13,9 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Test/More/UTF8.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
+MANIFEST.SKIP
+META.json
 META.yml
 README
 t/00-load.t
