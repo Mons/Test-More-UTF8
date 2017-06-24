@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MODULE=`perl -ne 'print $1 if m{all_from.+?([\w/.]+)}' Makefile.PL`;
+MODULE=`perl -ne 'print $1 if m{version_from.+?([\w/.]+)}i' Makefile.PL`;
 perl=perl
 $perl -v
 
